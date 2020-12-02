@@ -13,5 +13,10 @@ namespace AdventOfCode
             var fileName = @$"..\..\..\input\Day{day}.txt";
             return File.ReadAllLines(fileName).Select(x => Convert.ToInt32(x));
         }
+        public static IEnumerable<string> ReadStringArray(int day)
+        {
+            var fileName = @$"..\..\..\input\Day{day}.txt";
+            return File.ReadAllLines(fileName);
+        }
     }
 }

@@ -8,7 +8,9 @@ namespace AdventOfCode
         {
             Console.WriteLine("Advent of Code 2020");
             //Day1.Problem1();
-            Day1.Problem2();
+            //Day1.Problem2();
+            //Day2.Problem1();
+            Day2.Problem2();
 
             Console.ReadKey();
         }
