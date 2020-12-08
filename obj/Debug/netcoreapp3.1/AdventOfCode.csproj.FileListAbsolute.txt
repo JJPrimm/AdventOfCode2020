@@ -9,3 +9,5 @@ C:\Projects\AdventOfCode\AdventOfCode_2020\obj\Debug\netcoreapp3.1\AdventOfCode.
 C:\Projects\AdventOfCode\AdventOfCode_2020\obj\Debug\netcoreapp3.1\AdventOfCode.AssemblyInfo.cs
 C:\Projects\AdventOfCode\AdventOfCode_2020\obj\Debug\netcoreapp3.1\AdventOfCode.dll
 C:\Projects\AdventOfCode\AdventOfCode_2020\obj\Debug\netcoreapp3.1\AdventOfCode.pdb
+C:\Projects\AdventOfCode\AdventOfCode_2020\obj\Debug\netcoreapp3.1\AdventOfCode.csproj.CoreCompileInputs.cache
+C:\Projects\AdventOfCode\AdventOfCode_2020\obj\Debug\netcoreapp3.1\AdventOfCode.genruntimeconfig.cache

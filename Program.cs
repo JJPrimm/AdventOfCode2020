@@ -20,7 +20,9 @@ namespace AdventOfCode
             //Day6.Problem1();
             //Day6.Problem2();
             //Day7.Problem1();
-            Day7.Problem2();
+            //Day7.Problem2();
+            //Day8.Problem1();
+            Day8.Problem2();
 
             Console.ReadKey();
         }
