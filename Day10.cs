@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Diagnostics;
 using System.Linq;
 
 namespace AdventOfCode
@@ -37,6 +37,9 @@ namespace AdventOfCode
 
             int builtIn = adapters.Max() + 3;
             adapters = adapters.Prepend(0).Append(builtIn).ToArray();
+
+            DateTime start = DateTime.Now;
+
             long[] paths = { 1, 1 };
             for (int ptr = 2; ptr < adapters.Length; ptr++)
             {
@@ -51,7 +54,9 @@ namespace AdventOfCode
                 }
                 paths = paths.Append(branches).ToArray();
             }
+            var time = DateTime.Now - start;
             Console.WriteLine(paths.Max());
+            Debug.WriteLine(time.TotalMilliseconds);
         }
 
         //Ended up not using this. It was just too slow.
