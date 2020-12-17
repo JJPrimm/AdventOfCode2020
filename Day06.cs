@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace AdventOfCode
 {
-    public static class Day6
+    public static class Day06
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(6);
+            var input = Utilities.ReadStrings(6);
             int sum = 0;
             var groupAnswers = new List<char>();
             foreach(var line in input)
@@ -30,7 +30,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(6);
+            var input = Utilities.ReadStrings(6);
             int sum = 0;
             var groupAnswers = new List<char>();
             bool newGroup = true;

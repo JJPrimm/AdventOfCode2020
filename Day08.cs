@@ -5,11 +5,11 @@ using System.Linq;
 
 namespace AdventOfCode
 {
-    public static class Day8
+    public static class Day08
     {
         public static void Problem1()
         {
-            var Lines = Utilities.ReadStringArray(8)
+            var Lines = Utilities.ReadStrings(8)
                 .Select(i => new Line(i))
                 .ToArray();
 
@@ -39,7 +39,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var Lines = Utilities.ReadStringArray(8)
+            var Lines = Utilities.ReadStrings(8)
                 .Select(i => new Line(i))
                 .ToArray();
 

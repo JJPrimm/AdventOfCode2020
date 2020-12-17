@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace AdventOfCode
 {
-    public static class Day5
+    public static class Day05
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(5).ToList();
+            var input = Utilities.ReadStrings(5).ToList();
 
             var boardingPasses = input
                 .Select(p => Convert.ToInt32(new string(p.Replace('F', '0').Replace('B', '1').Replace('L', '0').Replace('R', '1')), 2));
@@ -19,7 +19,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(5).ToList();
+            var input = Utilities.ReadStrings(5).ToList();
 
             var boardingPasses = input
                 .Select(p => Convert.ToInt32(new string(p.Replace('F', '0').Replace('B', '1').Replace('L', '0').Replace('R', '1')), 2));

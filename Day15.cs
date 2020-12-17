@@ -9,7 +9,7 @@ namespace AdventOfCode
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(15).First().Split(',').Select(i => Convert.ToInt32(i));
+            var input = Utilities.ReadStrings(15).First().Split(',').Select(i => Convert.ToInt32(i));
 
             int turn = 1;
             int lastNum = 0;
@@ -51,7 +51,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(15).First().Split(',').Select(i => Convert.ToInt32(i));
+            var input = Utilities.ReadStrings(15).First().Split(',').Select(i => Convert.ToInt32(i));
 
             int turn = 1;
             int lastNum = 0;

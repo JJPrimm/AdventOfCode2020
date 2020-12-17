@@ -9,7 +9,7 @@ namespace AdventOfCode
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(11).ToArray();
+            var input = Utilities.ReadStrings(11).ToArray();
             List<Seat> seats = new List<Seat>();
             for (int y = 0; y < input.Length; y++)
             {
@@ -34,7 +34,7 @@ namespace AdventOfCode
         }
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(11).ToArray();
+            var input = Utilities.ReadStrings(11).ToArray();
             List<Seat> seats = new List<Seat>();
             for (int y = 0; y < input.Length; y++)
             {

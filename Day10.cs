@@ -9,7 +9,7 @@ namespace AdventOfCode
     {
         public static void Problem1()
         {
-            var adapters = Utilities.ReadIntArray(10).OrderBy(a => a).ToArray();
+            var adapters = Utilities.ReadInts(10).OrderBy(a => a).ToArray();
 
             int builtIn = adapters.Max() + 3;
             adapters = adapters.Prepend(0).Append(builtIn).ToArray();
@@ -33,7 +33,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var adapters = Utilities.ReadIntArray(10).OrderBy(a => a).ToArray();
+            var adapters = Utilities.ReadInts(10).OrderBy(a => a).ToArray();
 
             int builtIn = adapters.Max() + 3;
             adapters = adapters.Prepend(0).Append(builtIn).ToArray();

@@ -5,11 +5,11 @@ using System.Text;
 
 namespace AdventOfCode
 {
-    public static class Day7
+    public static class Day07
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(7);
+            var input = Utilities.ReadStrings(7);
             var bags = new List<Bag>();
 
             foreach (var bag in input)
@@ -24,7 +24,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(7);
+            var input = Utilities.ReadStrings(7);
             var bags = new List<Bag>();
 
             foreach (var bag in input)

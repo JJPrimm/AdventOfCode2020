@@ -5,11 +5,11 @@ using System.Linq;
 
 namespace AdventOfCode
 {
-    public static class Day9
+    public static class Day09
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadLongArray(9).ToArray();
+            var input = Utilities.ReadLongs(9).ToArray();
             int preamble = 25;
 
             var sumPtr = preamble;
@@ -45,7 +45,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadLongArray(9).ToArray();
+            var input = Utilities.ReadLongs(9).ToArray();
             long target = 20874512; // answer to Problem1
 
             for (int minPtr = 0; minPtr < input.Length - 1; minPtr++)

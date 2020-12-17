@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace AdventOfCode
 {
-    public static class Day1
+    public static class Day01
     {
         public static void Problem1()
         {
-            var expenses = Utilities.ReadIntArray(1).ToArray();
+            var expenses = Utilities.ReadInts(1).ToArray();
             for (int outer = 0; outer < expenses.Count(); outer++)
             {
                 for (int inner = 0; inner < expenses.Count(); inner++)
@@ -24,7 +24,7 @@ namespace AdventOfCode
         }
         public static void Problem2()
         {
-            var expenses = Utilities.ReadIntArray(1).ToArray();
+            var expenses = Utilities.ReadInts(1).ToArray();
             for (int outer = 0; outer < expenses.Count(); outer++)
             {
                 for (int mid = 0; mid < expenses.Count(); mid++)

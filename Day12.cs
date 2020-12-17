@@ -9,7 +9,7 @@ namespace AdventOfCode
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(12)
+            var input = Utilities.ReadStrings(12)
                 .Select(i => new Instruction { Direction = i[0], Amplitude = Convert.ToInt32(i.Substring(1)) })
                 .ToList();
             var ship = new Ship('E');
@@ -20,7 +20,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(12)
+            var input = Utilities.ReadStrings(12)
                 .Select(i => new Instruction { Direction = i[0], Amplitude = Convert.ToInt32(i.Substring(1)) })
                 .ToList();
             var ship = new Ship('E', 10, 1);

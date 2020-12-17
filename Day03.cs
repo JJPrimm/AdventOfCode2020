@@ -5,18 +5,18 @@ using System.Text;
 
 namespace AdventOfCode
 {
-    public class Day3
+    public class Day03
     {
         public static void Problem1()
         {
-            var slope = Utilities.ReadStringArray(3).ToArray();
+            var slope = Utilities.ReadStrings(3).ToArray();
             
             Console.WriteLine(TreeCount(slope, 3, 1));
         }
 
         public static void Problem2()
         {
-            var slope = Utilities.ReadStringArray(3).ToArray();
+            var slope = Utilities.ReadStrings(3).ToArray();
             long trees = TreeCount(slope, 1, 1);
             trees *= TreeCount(slope, 3, 1);
             trees *= TreeCount(slope, 5, 1);

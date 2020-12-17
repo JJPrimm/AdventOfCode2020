@@ -9,7 +9,7 @@ namespace AdventOfCode
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(14);
+            var input = Utilities.ReadStrings(14);
 
             string mask = "";
             var memory = new List<Memory>();
@@ -39,7 +39,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(14);
+            var input = Utilities.ReadStrings(14);
 
             string mask = "";
             var memory = new List<Memory>();

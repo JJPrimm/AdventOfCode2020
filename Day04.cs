@@ -4,11 +4,11 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode
 {
-    public static class Day4
+    public static class Day04
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(4);
+            var input = Utilities.ReadStrings(4);
             int reqFields = 0;
             int valid = 0;
             foreach(var line in input)
@@ -32,7 +32,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(4);
+            var input = Utilities.ReadStrings(4);
             int valid = 0;
             Passport passport = new Passport();
             foreach (var line in input)

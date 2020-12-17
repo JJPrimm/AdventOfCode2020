@@ -9,7 +9,7 @@ namespace AdventOfCode
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(13).ToArray();
+            var input = Utilities.ReadStrings(13).ToArray();
             var curTime = Convert.ToInt64(input[0]);
             var busses = input[1]
                 .Split(',')
@@ -27,7 +27,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(13).ToArray()[1].Split(',');
+            var input = Utilities.ReadStrings(13).ToArray()[1].Split(',');
             var busses = input
                 .Where(b => b != "x")
                 .Select(b => new Bus { number = Convert.ToInt32(b), delay = Array.IndexOf(input, b) })

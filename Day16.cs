@@ -9,7 +9,7 @@ namespace AdventOfCode
     {
         public static void Problem1()
         {
-            var input = Utilities.ReadStringArray(16).ToArray();
+            var input = Utilities.ReadStrings(16).ToArray();
 
             int ptr = 0;
             List<Rule> rules = new List<Rule>();
@@ -39,7 +39,7 @@ namespace AdventOfCode
 
         public static void Problem2()
         {
-            var input = Utilities.ReadStringArray(16).ToArray();
+            var input = Utilities.ReadStrings(16).ToArray();
 
             int ptr = 0;
             List<Rule> rules = new List<Rule>();
