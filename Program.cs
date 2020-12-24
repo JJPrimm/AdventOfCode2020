@@ -12,7 +12,13 @@ namespace AdventOfCode
             // So in the end, it's probably more efficient for me to hardcode the day and problem I'm working on like this.
 
             Console.WriteLine("Advent of Code 2020");
-            Day17.Problem2();
+            Day20.Problem2();
+            //Day20.Problem1();
+            //Day19.Problem2();
+            //Day19.Problem1();
+            //Day18.Problem2();
+            //Day18.Problem1();
+            //Day17.Problem2();
             //Day17.Problem1();
             //Day16.Problem2();
             //Day16.Problem1();

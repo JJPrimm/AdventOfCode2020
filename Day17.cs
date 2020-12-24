@@ -73,27 +73,27 @@ namespace AdventOfCode
                 Console.WriteLine($"Cycle {cycle + 1} - {points.Count(p => p.CurrentState)}");
             }
         }
-    }
 
-    public class Point
-    {
-        public int x { get; set; }
-        public int y { get; set; }
-        public int z { get; set; }
-        public int w { get; set; }
-        public bool CurrentState { get; set; } = false;
-        private bool newState { get; set; }
-
-        public void Cycle(IEnumerable<Point> points)
+        public class Point
         {
-            var adjacentActive = points.Where(p => Math.Abs(x - p.x) <= 1 && Math.Abs(y - p.y) <= 1 && Math.Abs(z - p.z) <= 1 && Math.Abs(w - p.w) <= 1).Count(p => p.CurrentState);
-            newState = (CurrentState && (adjacentActive == 3 || adjacentActive == 4))
-                || (!CurrentState && adjacentActive == 3);
-        }
+            public int x { get; set; }
+            public int y { get; set; }
+            public int z { get; set; }
+            public int w { get; set; }
+            public bool CurrentState { get; set; } = false;
+            private bool newState { get; set; }
 
-        public void Init()
-        {
-            CurrentState = newState;
+            public void Cycle(IEnumerable<Point> points)
+            {
+                var adjacentActive = points.Where(p => Math.Abs(x - p.x) <= 1 && Math.Abs(y - p.y) <= 1 && Math.Abs(z - p.z) <= 1 && Math.Abs(w - p.w) <= 1).Count(p => p.CurrentState);
+                newState = (CurrentState && (adjacentActive == 3 || adjacentActive == 4))
+                    || (!CurrentState && adjacentActive == 3);
+            }
+
+            public void Init()
+            {
+                CurrentState = newState;
+            }
         }
     }
 }
